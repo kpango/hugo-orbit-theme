@@ -7,7 +7,7 @@
 - id: language
   translation: Languages
 - id: projects
-  translation: Projects
+  translation: OSS Projects
 - id: awards
   translation: Awards
 - id: skills
