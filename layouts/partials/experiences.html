@@ -11,7 +11,8 @@
                         <div class="company">{{ .company }}</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
+                        <!-- <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p> -->
+                        <p>{{ readFile .details | markdownify }}</p>
                     </div><!--//details-->
                 </div><!--//item-->
 				{{ end }}

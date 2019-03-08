@@ -2,7 +2,7 @@
                 <h2 class="section-title"><i class="fa {{ .Site.Params.projects.icon }}"></i>{{ i18n "projects" }}</h2>
 				{{ range .Site.Params.projects.list }}
                 <div class="item">
-                    <span class="project-title"><a href="{{ .url }}">{{ .title }}</a></span> - <span class="project-tagline">{{ with .tagline }}{{ . | markdownify }}{{ end }}</span>
+                    <span class="project-title"><a href="{{ .url }}">{{ .title }}</a></span> - <span class="project-tagline">{{ readFile .tagline | markdownify }}</span>
                 </div><!--//item-->
 				{{ end }}
             </section><!--//section-->
